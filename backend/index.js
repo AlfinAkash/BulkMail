@@ -29,7 +29,6 @@ app.post("/sendemail", async (req, res) => {
         text: msg,
       });
     }
-
     res.send(true);
   } catch (error) {
     console.error("Failed to send email:", error);
